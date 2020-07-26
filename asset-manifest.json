@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/hereallysaidthat/static/css/main.5f361e03.chunk.css",
+    "main.js": "/hereallysaidthat/static/js/main.5d5b4bfe.chunk.js",
+    "main.js.map": "/hereallysaidthat/static/js/main.5d5b4bfe.chunk.js.map",
+    "runtime-main.js": "/hereallysaidthat/static/js/runtime-main.70cae730.js",
+    "runtime-main.js.map": "/hereallysaidthat/static/js/runtime-main.70cae730.js.map",
+    "static/js/2.09a9d2e9.chunk.js": "/hereallysaidthat/static/js/2.09a9d2e9.chunk.js",
+    "static/js/2.09a9d2e9.chunk.js.map": "/hereallysaidthat/static/js/2.09a9d2e9.chunk.js.map",
+    "index.html": "/hereallysaidthat/index.html",
+    "precache-manifest.d5a918174d7096700ff8de5ae24aca95.js": "/hereallysaidthat/precache-manifest.d5a918174d7096700ff8de5ae24aca95.js",
+    "service-worker.js": "/hereallysaidthat/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/hereallysaidthat/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.09a9d2e9.chunk.js.LICENSE.txt": "/hereallysaidthat/static/js/2.09a9d2e9.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/hereallysaidthat/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.70cae730.js",
+    "static/js/2.09a9d2e9.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.5d5b4bfe.chunk.js"
+  ]
+}

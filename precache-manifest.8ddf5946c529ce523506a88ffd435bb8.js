@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ebfee1b13099e0ddecfd7b3f184e6e49",
+    "revision": "6b19be432fe584bc9a34a846da01d9d2",
     "url": "/hereallysaidthat/index.html"
   },
   {
-    "revision": "373589ec1647e7c4ba65",
+    "revision": "4fe5ae64b7cfb0a626ab",
     "url": "/hereallysaidthat/static/css/main.5f361e03.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hereallysaidthat/static/js/2.5c45228b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "373589ec1647e7c4ba65",
-    "url": "/hereallysaidthat/static/js/main.da531b36.chunk.js"
+    "revision": "4fe5ae64b7cfb0a626ab",
+    "url": "/hereallysaidthat/static/js/main.12feb803.chunk.js"
   },
   {
     "revision": "e7d6e47c62360718f57f",

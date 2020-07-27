@@ -1,9 +1,9 @@
 import React, {Component} from "react";
 import queryString from "query-string";
 import quoteArray from '../resources/quotes'
+import { Helmet } from "react-helmet";
 
 class QuotePage extends Component {
-
     constructor(props) {
         super(props);
         this.state = {
@@ -41,7 +41,7 @@ class QuotePage extends Component {
     }
 
     getCorrectProps = () => {
-        let params = this.props.params;
+        let params = this.props.location.search;
         if(!params) {
             params = {};
         } else if (typeof params === 'string' || params instanceof String) {
@@ -50,9 +50,30 @@ class QuotePage extends Component {
         return params;
     };
 
+    getMeta = (quoteObject) => {
+        return (
+            <Helmet>
+                <title>{quoteObject.author + ' says that ...'}</title>
+                <meta
+                    name="description"
+                    content={'“' + quoteObject.quote + '”'}
+                />
+                <meta
+                    property="og:title"
+                    content={quoteObject.author + ' says,'}
+                />
+                <meta
+                    property="og:image"
+                    content={quoteObject.authorImage}
+                />
+            </Helmet>
+        )
+    };
+
     render() {
         return(
             <div className="App">
+                {/*{this.getMeta(this.state.quoteObject)}*/}
                 <header className="App-header">
                     {
                         this.state.quoteObject.authorImage &&

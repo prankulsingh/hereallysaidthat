@@ -5,17 +5,9 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-const routing = (
-    <Router>
-        <div>
-            <Route path="/" component={App}/>
-        </div>
-    </Router>
-);
-
 ReactDOM.render(
     <React.StrictMode>
-        {routing}
+        <App/>
     </React.StrictMode>,
     document.getElementById('root')
 );

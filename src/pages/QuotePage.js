@@ -72,7 +72,7 @@ class QuotePage extends Component {
 
     render() {
         return(
-            <div className="App">
+            <div className="App" style={{fontFamily: 'Kalam'}}>
                 {/*{this.getMeta(this.state.quoteObject)}*/}
                 <header className="App-header">
                     {

@@ -54,18 +54,11 @@ class QuotePage extends Component {
         return (
             <Helmet>
                 <title>{quoteObject.author + ' says that ...'}</title>
-                <meta
-                    name="description"
-                    content={'“' + quoteObject.quote + '”'}
-                />
-                <meta
-                    property="og:title"
-                    content={quoteObject.author + ' says,'}
-                />
-                <meta
-                    property="og:image"
-                    content={quoteObject.authorImage}
-                />
+                <meta property="og:title" content={quoteObject.author + ' says,'} />
+                <meta property="og:url" content="http://prankulsingh.github.io/hereallysaidthat" />
+                <meta property="og:image" content={quoteObject.authorImage}/>
+                <meta property="og:description" content={'“' + quoteObject.quote + '”'}/>
+                <meta property="og:site_name" content="He Really said that?!?" />
             </Helmet>
         )
     };
@@ -73,7 +66,7 @@ class QuotePage extends Component {
     render() {
         return(
             <div className="App" style={{fontFamily: 'Kalam'}}>
-                {/*{this.getMeta(this.state.quoteObject)}*/}
+                {this.getMeta(this.state.quoteObject)}
                 <header className="App-header">
                     {
                         this.state.quoteObject.authorImage &&

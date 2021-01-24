@@ -1,7 +1,8 @@
 import React, {Component} from "react";
 import queryString from "query-string";
-import quoteArray from '../resources/quotes'
+import loadingIcon from '../resources/loading.svg'
 import { Helmet } from "react-helmet";
+import Tabletop from 'tabletop';
 
 class QuotePage extends Component {
     constructor(props) {
@@ -9,34 +10,40 @@ class QuotePage extends Component {
         this.state = {
             quoteArray: [],
             quoteObject: {
-                authorImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Portrait_Gandhi.jpg/1200px-Portrait_Gandhi.jpg",
-                quote: "hello",
-                author: "AgentP",
-                date: "21 june"
+                authorImage: loadingIcon,
+                quote: "Loading an awesome quote...",
+                author: "From your friend",
+                date: "Today!"
             }
         };
     }
 
     componentDidMount() {
-        this.setState({
-            quoteArray: quoteArray
-        }, () => {
-            try {
-                let id = this.getCorrectProps().id;
-                if (id && parseInt(id) < this.state.quoteArray.length) {
-                    console.log("got from id!");
+        Tabletop.init({
+            key: '1jfO71VCAskGg4VIioUW7FfntRfA6ZoeYSUlTAGARItE',
+            callback: googleData => {
+                this.setState({
+                    quoteArray: googleData
+                }, () => {
+                    try {
+                        let id = this.getCorrectProps().id;
+                        if (id && parseInt(id) < this.state.quoteArray.length) {
+                            console.log("got from id!");
+                            this.setState({
+                                quoteObject: this.state.quoteArray[id]
+                            });
+                            return;
+                        }
+                    } catch (e) {
+                        console.error("invalid id!");
+                    }
+                    console.log("got random!");
                     this.setState({
-                        quoteObject: quoteArray[id]
+                        quoteObject: this.state.quoteArray[Math.floor(Math.random() * this.state.quoteArray.length)]
                     });
-                    return;
-                }
-            } catch (e) {
-                console.error("invalid id!");
-            }
-            console.log("got random!");
-            this.setState({
-                quoteObject: quoteArray[Math.floor(Math.random() * this.state.quoteArray.length)]
-            });
+                });
+            },
+            simpleSheet: true
         });
     }
 

@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/hereallysaidthat/static/css/main.1af02c82.chunk.css",
-    "main.js": "/hereallysaidthat/static/js/main.a35dd437.chunk.js",
-    "main.js.map": "/hereallysaidthat/static/js/main.a35dd437.chunk.js.map",
-    "runtime-main.js": "/hereallysaidthat/static/js/runtime-main.70cae730.js",
-    "runtime-main.js.map": "/hereallysaidthat/static/js/runtime-main.70cae730.js.map",
-    "static/js/2.95b87e19.chunk.js": "/hereallysaidthat/static/js/2.95b87e19.chunk.js",
-    "static/js/2.95b87e19.chunk.js.map": "/hereallysaidthat/static/js/2.95b87e19.chunk.js.map",
-    "index.html": "/hereallysaidthat/index.html",
-    "precache-manifest.4540a61ddc34d28750667b2eb648b6c8.js": "/hereallysaidthat/precache-manifest.4540a61ddc34d28750667b2eb648b6c8.js",
-    "service-worker.js": "/hereallysaidthat/service-worker.js",
-    "static/css/main.1af02c82.chunk.css.map": "/hereallysaidthat/static/css/main.1af02c82.chunk.css.map",
-    "static/js/2.95b87e19.chunk.js.LICENSE.txt": "/hereallysaidthat/static/js/2.95b87e19.chunk.js.LICENSE.txt",
-    "static/media/loading.svg": "/hereallysaidthat/static/media/loading.4ba43602.svg"
+    "main.css": "/static/css/main.1af02c82.chunk.css",
+    "main.js": "/static/js/main.453eb3e4.chunk.js",
+    "main.js.map": "/static/js/main.453eb3e4.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c6c7ae23.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c6c7ae23.js.map",
+    "static/js/2.95b87e19.chunk.js": "/static/js/2.95b87e19.chunk.js",
+    "static/js/2.95b87e19.chunk.js.map": "/static/js/2.95b87e19.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.b487a98bd12418dba3f8b2becab4eb71.js": "/precache-manifest.b487a98bd12418dba3f8b2becab4eb71.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.1af02c82.chunk.css.map": "/static/css/main.1af02c82.chunk.css.map",
+    "static/js/2.95b87e19.chunk.js.LICENSE.txt": "/static/js/2.95b87e19.chunk.js.LICENSE.txt",
+    "static/media/loading.svg": "/static/media/loading.4ba43602.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.70cae730.js",
+    "static/js/runtime-main.c6c7ae23.js",
     "static/js/2.95b87e19.chunk.js",
     "static/css/main.1af02c82.chunk.css",
-    "static/js/main.a35dd437.chunk.js"
+    "static/js/main.453eb3e4.chunk.js"
   ]
 }
